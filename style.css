@@ -1,0 +1,377 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    /* background-color: rgba(220, 241, 255, 0.933); */
+    font-family: Cairo;
+}
+
+.startContainer {
+    background-color: rgba(220, 241, 255, 0.933);
+    height: 425px;
+}
+
+.container1 {
+    background: url(images/Group.png);
+    /* background-size: cover; */
+    background-position: center;
+    /* background-size: 5373px 3574px; original*/
+    background-size: 1791px 1191.3333px;
+    background-position: center -500px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.container2,
+.navbar {
+    background-color: rgba(232, 232, 232, 0);
+}
+
+.navbar {
+    padding-top: 20px !important;
+}
+
+.container3 {
+    height: 50px !important;
+    border-radius: 100px !important;
+    direction: rtl;
+    background-color: rgb(243, 243, 243);
+    position: relative;
+    animation: mymove0 2s ease-in-out;
+}
+
+@keyframes mymove0 {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.container3 li a {
+    font-weight: bold;
+    font-size: 14px;
+    height: 30px !important;
+    margin-left: 10px;
+    color: black;
+    border-radius: 10px;
+    background-color: rgb(243, 243, 243);
+    padding: 5px;
+}
+
+.container3 li a:hover {
+    background-color: rgb(217, 217, 217) !important;
+    color: black;
+    border-radius: 10px;
+}
+
+.nav-item,
+.collapse {
+    background-color: rgb(243, 243, 243);
+}
+
+.btn-sm {
+    font-weight: bold;
+    width: 80px;
+    border-radius: 100px !important;
+    background-color: rgb(17, 11, 62);
+    color: black;
+    border: none;
+}
+
+.join {
+    /* background-color: beige; */
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.join h3 {
+    /* background-color: rgb(109, 109, 152); */
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 500;
+    line-height: 50px;
+    font-size: x-large;
+    position: relative;
+    animation: mymove 2s ease-in-out;
+}
+
+@keyframes mymove {
+    from {
+        top: -30px;
+        opacity: 0
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+.join button {
+    font-weight: bold;
+    width: 120px;
+    border-radius: 100px;
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    position: relative;
+    animation: mymove2 2s ease-in-out;
+}
+
+@keyframes mymove2 {
+    from {
+        top: 20px;
+        opacity: 0
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+.join button:hover {
+    background-color: #1A6F93;
+    border: 2px solid white;
+    color: white;
+}
+
+.join button:focus {
+    background-color: #1A6F93;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-sm {
+    background-color: #1A6F93 !important;
+    border: none !important;
+}
+
+.btn-sm:hover {
+    background-color: #0898d5 !important;
+    border: none !important;
+}
+
+
+/*responsive*/
+@media screen and (max-width: 650px) {
+    .container1 {
+        background: url(images/Group.png);
+        background-size: cover;
+        background-position: center;
+        /* background-size: 5373px 3574px; original*/
+        background-size: 1791px 1191.3333px;
+        background-position: -950px -500px;
+        height: 500px;
+    }
+
+    .container3 {
+        direction: ltr !important;
+        text-align: center;
+    }
+
+    .collapse {
+        z-index: 1;
+    }
+
+    .navbar-toggler {
+        border: none !important;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+
+    .join h3 {
+        width: 100%;
+        font-size: 22px !important;
+    }
+}
+
+
+
+/*second*/
+.secondContainer {
+    background-color: rgba(220, 241, 255, 0.933);
+    height: fit-content;
+}
+
+.gridItem {
+    margin: auto;
+    margin-top: 0%;
+    padding-top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: gridItem1 2s ease-in-out;
+}
+
+@keyframes gridItem1 {
+    from {
+        bottom: 20px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+    }
+}
+
+/*responsive*/
+@media screen and (max-width: 650px) {
+    .gridItem{
+        overflow: hidden;
+    }
+    .gridItem img{
+        width: 400px !important;
+    }
+}
+
+/*third*/
+.thirdContainer {
+    background-color: rgba(220, 241, 255, 0.933);
+    height:fit-content;
+}
+
+.thirdContainer .fluid1 {
+    background: url(images/Path27.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 425px;
+    margin: auto;
+}
+.parg1{
+    margin-top: 25px;
+    width: 85%;
+    text-align: right;
+    color:white;
+    font-family: Amiri;
+    font-size: larger;
+    padding-right: 50px;
+}
+.parg2{
+    width: 85%;
+    padding-right: 50px;
+    text-align: right;
+    color:white;
+    font-family: Amiri;
+    font-size: larger;
+}
+
+.bookimage {
+    position: relative;
+    animation: book 1.7s ease-in-out;
+}
+@keyframes book {
+    from {
+        right: 50px;
+        opacity: 0
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+.thirdContainer .fluid2 {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+}
+
+.parg3{
+    margin-top: 25px;
+    text-align: right;
+    color: #1A6F93;
+    font-family: Amiri;
+    font-size: larger;
+}
+.parg4{
+    text-align: right;
+    color: #1A6F93;
+    font-family: Amiri;
+    font-size: larger;
+}
+.words{
+    bottom: 100px !important;
+    position: relative;
+}
+.paperimage {
+    bottom: 180px !important;
+    position: relative;
+    animation: paper 1.7s ease-in-out;
+}
+
+@keyframes paper {
+    from {
+        left: 50px;
+        opacity: 0
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+
+
+/*responsive*/
+@media screen and (max-width: 650px) {
+    .thirdContainer {
+        background-color: #82b97b;;
+        height: fit-content;
+        direction: rtl !important;
+    }
+    .bookRow h1{
+        font-size: 30px !important;
+        width: 100%;
+    } 
+    .parg1 , .parg2{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/*fourth*/
+.fourthContainer {
+    background-color: rgba(220, 241, 255, 0.933);
+    /* background-color: rgba(53, 101, 132, 0.933); */
+    height:fit-content;
+}
+
+.fourthContainer .container-fluid {
+    background: url(images/Group329.svg);
+    /* background-size: 23245.5px 12018px; */
+    background-size: 2500px;
+    background-repeat: no-repeat;
+    background-position: bottom ;
+    width: 100%;
+    height: 900px;
+    margin: auto;
+}
+
+
+
+
+
+.home-demo .item {
+    background: #ffffff;
+    width: 200px;
+    height: 200px;
+    border-radius: 500px;
+}
+.home-demo .item img{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
