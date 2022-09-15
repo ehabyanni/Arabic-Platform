@@ -159,7 +159,7 @@
 
 
 /*responsive*/
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
     .container1 {
         background: url(images/Group.png);
         background-size: cover;
@@ -170,9 +170,15 @@
         height: 500px;
     }
 
+}
+@media screen and (max-width: 992px) {
+
     .container3 {
         direction: ltr !important;
         text-align: center;
+    }
+    .navbar-brand ,.navbar-toggler{
+        margin-top: -5px;
     }
 
     .collapse {
@@ -192,6 +198,7 @@
         font-size: 22px !important;
     }
 }
+
 
 
 
@@ -224,19 +231,20 @@
 }
 
 /*responsive*/
-@media screen and (max-width: 650px) {
-    .gridItem{
+@media screen and (max-width: 767px) {
+    .gridItem {
         overflow: hidden;
     }
-    .gridItem img{
-        width: 400px !important;
+
+    .gridItem img {
+        width: 250px !important;
     }
 }
 
 /*third*/
 .thirdContainer {
     background-color: rgba(220, 241, 255, 0.933);
-    height:fit-content;
+    height: fit-content;
 }
 
 .thirdContainer .fluid1 {
@@ -247,29 +255,46 @@
     width: 100%;
     height: 425px;
     margin: auto;
+    direction: rtl;
 }
-.parg1{
+
+.bookRow h1 {
+    text-align: center;
+    color: white;
+    font-family: Amiri;
+    font-size: 60px !important;
+}
+
+.parg1 {
     margin-top: 25px;
-    width: 85%;
+    width: 100%;
     text-align: right;
-    color:white;
+    color: white;
     font-family: Amiri;
     font-size: larger;
-    padding-right: 50px;
+    padding-right: 200px;
 }
-.parg2{
-    width: 85%;
-    padding-right: 50px;
+
+.parg2 {
+    width: 100%;
+    padding-right: 200px;
     text-align: right;
-    color:white;
+    color: white;
     font-family: Amiri;
     font-size: larger;
+}
+
+.bookimage img {
+    width: 350px;
+    display: block;
+    margin: auto;
 }
 
 .bookimage {
     position: relative;
     animation: book 1.7s ease-in-out;
 }
+
 @keyframes book {
     from {
         right: 50px;
@@ -282,28 +307,32 @@
 }
 
 .thirdContainer .fluid2 {
+    background-color: rgba(220, 241, 255, 0.933);
     width: 100%;
     height: 300px;
     margin: auto;
 }
 
-.parg3{
+.parg3 {
     margin-top: 25px;
     text-align: right;
     color: #1A6F93;
     font-family: Amiri;
     font-size: larger;
 }
-.parg4{
+
+.parg4 {
     text-align: right;
     color: #1A6F93;
     font-family: Amiri;
     font-size: larger;
 }
-.words{
+
+.words {
     bottom: 100px !important;
     position: relative;
 }
+
 .paperimage {
     bottom: 180px !important;
     position: relative;
@@ -324,19 +353,56 @@
 
 
 /*responsive*/
-@media screen and (max-width: 650px) {
-    .thirdContainer {
-        background-color: #82b97b;;
-        height: fit-content;
-        direction: rtl !important;
+@media screen and (max-width: 767px) {
+    .thirdContainer .fluid1 {
+        background-color: #82b97b;
+        height: 480px;
     }
-    .bookRow h1{
-        font-size: 30px !important;
+
+    .bookRow h1 {
+        font-size: 45px !important;
         width: 100%;
-    } 
-    .parg1 , .parg2{
+    }
+
+    .parg1,
+    .parg2 {
         width: 100%;
         text-align: center;
+        padding-right: 0%;
+    }
+
+    .bookimage img {
+        width: 280px !important;
+        display: block;
+        margin: auto;
+    }
+
+    .thirdContainer .fluid2 {
+        background-color: rgba(220, 241, 255, 0.933);
+        height: 600px;
+    }
+
+    .words {
+        bottom: 0% !important;
+        margin-top: 120px !important;
+    }
+
+    .parg3,
+    .parg4 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .paperimage {
+        /* background-color: #1A6F93; */
+        bottom: 0% !important;
+    }
+
+    .paperimage img {
+        display: block;
+        margin: auto;
+        width: 300px !important;
+
     }
 }
 
@@ -345,7 +411,7 @@
 .fourthContainer {
     background-color: rgba(220, 241, 255, 0.933);
     /* background-color: rgba(53, 101, 132, 0.933); */
-    height:fit-content;
+    height: fit-content;
 }
 
 .fourthContainer .container-fluid {
@@ -353,25 +419,122 @@
     /* background-size: 23245.5px 12018px; */
     background-size: 2500px;
     background-repeat: no-repeat;
-    background-position: bottom ;
+    background-position: bottom;
     width: 100%;
     height: 900px;
     margin: auto;
 }
 
-
-
-
+.partners {
+    flex-direction: row-reverse;
+    padding-top: 300px !important;
+}
 
 .home-demo .item {
     background: #ffffff;
     width: 200px;
     height: 200px;
     border-radius: 500px;
+    display: block;
+    margin: auto;
 }
-.home-demo .item img{
+
+.home-demo .item img {
     display: block;
     margin: auto;
     width: 200px;
     height: 200px;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot.owl-nav {
+    position: relative;
+    bottom: 125px;
+    right: -340px;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot.owl-nav {
+    position: relative;
+    bottom: 125px;
+    left: -340px;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel button.owl-dot.owl-nav,
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel button.owl-dot.owl-nav {
+    background-color: #ffffff00;
+}
+
+@media screen and (max-width: 767px) {
+    .home-demo {
+        margin-top: 0% !important;
+    }
+
+    .partners {
+        padding-top: 200px !important;
+    }
+
+    .partners h2 {
+        padding-bottom: 50px !important;
+    }
+
+    .home-demo .item {
+        display: block;
+        margin: auto;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel button.owl-dot.owl-nav,
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel button.owl-dot.owl-nav {
+        /* display: none; */
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel button.owl-dot.owl-nav {
+        position: relative;
+        bottom: 130px;
+        right: -220px;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel button.owl-dot.owl-nav {
+        position: relative;
+        bottom: 130px;
+        left: -220px;
+    }
+}
+@media screen and (min-width: 991px) and (max-width: 1100px) {
+
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel button.owl-dot.owl-nav {
+        position: relative;
+        bottom: 130px;
+        right: -295px;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel button.owl-dot.owl-nav {
+        position: relative;
+        bottom: 130px;
+        left: -295px;
+    }
 }
