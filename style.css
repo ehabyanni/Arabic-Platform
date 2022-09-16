@@ -49,6 +49,9 @@
         opacity: 1;
     }
 }
+.container3 img{
+    height: 50px;
+}
 
 .container3 li a {
     font-weight: bold;
@@ -163,6 +166,12 @@
 
 
 /*responsive*/
+
+@media screen and (max-width: 394px){
+    .container3 img{
+        height: 30px !important;
+    }
+}
 @media screen and (max-width: 767px) {
     .container1 {
         background: url(images/Group.png);
