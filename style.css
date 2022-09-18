@@ -1,8 +1,7 @@
 * {
     padding: 0%;
     margin: 0%;
-    /* background-color: rgba(220, 241, 255, 0.933); */
-    font-family: Arial;
+    font-family: Noto Naskh Arabic;
 }
 
 .startContainer {
@@ -11,8 +10,7 @@
 }
 
 .container1 {
-    background: url(images/Group.png);
-    /* background-size: cover; */
+    background: url(assets/galaxypath.png);
     background-position: center;
     /* background-size: 5373px 3574px; original*/
     background-size: 1791px 1191.3333px;
@@ -25,6 +23,8 @@
 .container2,
 .navbar {
     background-color: rgba(232, 232, 232, 0);
+    display: block;
+    margin: auto;
 }
 
 .navbar {
@@ -34,7 +34,6 @@
 .container3 {
     height: 50px !important;
     border-radius: 100px !important;
-    direction: rtl;
     background-color: rgb(243, 243, 243);
     position: relative;
     animation: mymove0 2s ease-in-out;
@@ -49,8 +48,9 @@
         opacity: 1;
     }
 }
-.container3 img{
-    height: 50px;
+
+.container3 img {
+    height: 45px;
 }
 
 .container3 li a {
@@ -100,7 +100,7 @@
     color: white;
     font-weight: 500;
     line-height: 50px;
-    font-family: Arial;
+    font-family: Noto Naskh Arabic;
     font-size: 26px;
     font-weight: 600;
     position: relative;
@@ -167,11 +167,20 @@
 
 /*responsive*/
 
-@media screen and (max-width: 394px){
-    .container3 img{
+@media screen and (max-width: 394px) {
+    .container3 img {
         height: 30px !important;
+        display: block;
+        margin: auto;
+    }
+
+    .container2,
+    .navbar {
+        display: block;
+        margin: auto;
     }
 }
+
 @media screen and (max-width: 767px) {
     .container1 {
         background: url(images/Group.png);
@@ -183,13 +192,34 @@
         height: 500px;
     }
 
+    .container2,
+    .navbar {
+        display: block;
+        margin: auto;
+    }
+
+    #arabNetwork{
+        height: 40px;
+        margin-left: 10px;
+    }
+
 }
+
 
 @media screen and (max-width: 992px) {
 
     .container3 {
         direction: ltr !important;
         text-align: center;
+    }
+    #arabNetwork{
+        height: 50px;
+        margin-left: 15px;
+    }
+    .container2,
+    .navbar {
+        display: block;
+        margin: auto;
     }
 
     .navbar-brand,
@@ -247,13 +277,25 @@
 }
 
 /*responsive*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 400px) {
     .gridItem {
         overflow: hidden;
     }
 
     .gridItem img {
-        width: 250px !important;
+        width: 80px !important;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width: 767px) {
+    .gridItem {
+        overflow: hidden;
+    }
+
+    .gridItem img {
+        width: 100px !important;
         display: block;
         margin: auto;
     }
@@ -261,7 +303,7 @@
 
 @media screen and (min-width: 767px) and (max-width:1100px) {
     .gridItem img {
-        width: 250px !important;
+        width: 200px !important;
         display: block;
         margin: auto;
     }
@@ -274,20 +316,21 @@
 }
 
 .thirdContainer .fluid1 {
-    background: url(images/Path27.png);
+    background: url(assets/green-path.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 425px;
+    height: 500px;
     margin: auto;
     direction: rtl;
 }
 
 .bookRow h1 {
     text-align: center;
+    padding-right: 250px !important;
     color: white;
-    font-family: Amiri;
+    font-family: Lalezar;
     font-size: 60px !important;
 }
 
@@ -296,24 +339,25 @@
     width: 100%;
     text-align: right;
     color: white;
-    font-family: Amiri;
+    font-family: Noto Naskh Arabic;
     font-size: larger;
-    padding-right: 200px;
+    padding-right: 300px;
 }
 
 .parg2 {
     width: 100%;
-    padding-right: 200px;
+    padding-right: 300px;
     text-align: right;
     color: white;
-    font-family: Amiri;
+    font-family: Noto Naskh Arabic;
     font-size: larger;
 }
 
 .bookimage img {
-    width: 350px;
+    width: 450px;
     display: block;
     margin: auto;
+    padding-top: 75px;
 }
 
 .bookimage {
@@ -333,41 +377,48 @@
 }
 
 .thirdContainer .fluid2 {
-    background-color: rgba(220, 241, 255, 0.933);
     width: 100%;
     height: 300px;
     margin: auto;
+    direction: ltr !important;
 }
 
 .parg3 {
     margin-top: 25px;
     text-align: right;
     color: #1A6F93;
-    font-family: Amiri;
+    font-family: Noto Naskh Arabic;
     font-size: larger;
 }
 
 .parg4 {
     text-align: right;
     color: #1A6F93;
-    font-family: Amiri;
+    font-family: Noto Naskh Arabic;
     font-size: larger;
 }
 
 .words {
-    bottom: 100px !important;
+    bottom: 180px !important;
     position: relative;
 }
 
 .words h1 {
     text-align: center;
     color: #1A6F93;
-    font-family: Amiri;
+    font-family: Lalezar;
     font-size: 60px !important;
 }
 
+.paperimage img {
+    width: 900px;
+    padding-right: 250px;
+    display: block;
+    margin: auto;
+}
+
 .paperimage {
-    bottom: 180px !important;
+    bottom: 250px !important;
     position: relative;
     animation: paper 1.7s ease-in-out;
 }
@@ -395,6 +446,7 @@
     .bookRow h1 {
         font-size: 45px !important;
         width: 100%;
+        padding-right: 0px !important;
     }
 
     .parg1,
@@ -408,6 +460,7 @@
         width: 280px !important;
         display: block;
         margin: auto;
+        padding-top: 0px;
     }
 
     .thirdContainer .fluid2 {
@@ -416,8 +469,7 @@
     }
 
     .words {
-        bottom: 0% !important;
-        margin-top: 120px !important;
+        margin-top: 300px !important;
     }
 
     .words h1 {
@@ -432,14 +484,15 @@
     }
 
     .paperimage {
-        /* background-color: #1A6F93; */
-        bottom: 0% !important;
+        bottom: 220px !important;
+        position: relative;
     }
 
     .paperimage img {
         display: block;
         margin: auto;
         width: 300px !important;
+        padding-right: 0px;
 
     }
 }
@@ -447,15 +500,16 @@
 @media screen and (min-width:767px) and (max-width:1100px) {
     .bookRow h1 {
         text-align: center;
-        padding-left: 100px;
+        padding-right: 100px !important;
         font-size: 40px !important;
+        padding-top: 30px;
     }
 
     .parg1,
     .parg2 {
-        margin-top: 40px;
+        margin-top: 30px;
         width: 100%;
-        padding-right: 25px;
+        padding-right: 80px;
     }
 
     .bookimage {
@@ -465,11 +519,11 @@
     }
 
     .bookimage img {
-        width: 250px;
+        width: 280px;
     }
 
     .words {
-        bottom: 10px !important;
+        bottom: 40px !important;
         position: relative;
     }
 
@@ -482,11 +536,10 @@
     .parg4 {
         margin-top: 25px;
         width: 100%;
-        padding-right: 25px;
     }
 
     .paperimage {
-        bottom: 0% !important;
+        bottom: 80px !important;
         position: relative;
         display: flex;
         justify-content: center;
@@ -494,8 +547,22 @@
     }
 
     .paperimage img {
-        width: 350px;
+        width: 400px;
+        padding-right: 0px;
     }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1300px){
+    .bookimage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bookimage img {
+        width: 400px;
+    }
+
 }
 
 
@@ -507,7 +574,7 @@
 }
 
 .fourthContainer .container-fluid {
-    background: url(images/Group329.svg);
+    background: url(assets/lightbluepath.png);
     /* background-size: 23245.5px 12018px; */
     background-size: 2500px;
     background-repeat: no-repeat;
@@ -518,7 +585,7 @@
 }
 
 .partners {
-    flex-direction: row-reverse;
+    direction: ltr;
     padding-top: 300px !important;
 }
 
@@ -529,13 +596,22 @@
     border-radius: 500px;
     display: block;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgitem {
+    width: 90%;
+    height: 90%;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-demo .item img {
-    display: block;
-    margin: auto;
-    width: 200px;
-    height: 200px;
+    width: 100px;
 }
 
 .owl-carousel .owl-nav button.owl-next,
@@ -570,10 +646,11 @@
 
     .partners {
         padding-top: 200px !important;
+        flex-direction: column-reverse;
     }
 
     .partners h2 {
-        padding-bottom: 50px !important;
+        padding-bottom: 100px !important;
     }
 
     .home-demo .item {
@@ -591,6 +668,30 @@
         bottom: 0%;
         left: 0%;
         right: 0%;
+    }
+
+    .home-demo .item {
+        width: 200px;
+        height: 200px;
+        border-radius: 500px;
+        display: block;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imgitem {
+        width: 90%;
+        height: 90%;
+        border-radius: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-demo .item img {
+        width: 100px;
     }
 }
 
@@ -630,6 +731,31 @@
         bottom: 130px;
         left: -295px;
     }
+
+    .home-demo .item {
+        background: #ffffff;
+        width: 200px;
+        height: 200px;
+        border-radius: 500px;
+        display: block;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imgitem {
+        width: 90%;
+        height: 90%;
+        border-radius: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-demo .item img {
+        width: 100px;
+    }
 }
 
 
@@ -643,7 +769,7 @@
     margin-top: -200px !important;
     position: relative;
     top: -75px !important;
-    flex-direction: row-reverse;
+    direction: ltr;
 }
 
 .calendarimg {
@@ -667,7 +793,7 @@
     text-align: center;
     padding-top: 10px;
     padding-right: 120px !important;
-    font-family: Amiri;
+    font-family: Lalezar;
     color: #1A6F93 !important;
 
 }
@@ -678,7 +804,7 @@
     padding-top: 30px;
     padding-left: 20px !important;
     font-size: 16px !important;
-    font-family: Amiri;
+    font-family: Lalezar;
     font-weight: 600;
     text-decoration: none;
     color: #000000 !important;
@@ -699,7 +825,7 @@
 
 .footer-demo .newsitem h5 {
     color: #1A6F93 !important;
-    font-family: Amiri;
+    font-family: Noto Naskh Arabic;
     font-size: 22px;
     line-height: 33px;
 }
@@ -730,27 +856,15 @@
     background-color: #ffffff00;
 }
 
-/* 
-.owl-dots button.owl-dot {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: 1px solid black;
-    display: inline-block;
-    background: #ccc;
-    margin: 0 3px;
-  }
-  .owl-dots button.owl-dot.active {
-    background-color: #000;
-  }
-  .owl-dots button.owl-dot:focus {
-    outline: none;
-  } */
-
 @media screen and (max-width: 767px) {
     .calenderSection {
-        flex-direction: row;
+        flex-direction: column-reverse;
     }
+
+    .headNews {
+        padding-right: 20px !important;
+    }
+
     .headNews2,
     .headNews2 a {
         font-size: 10px !important;
@@ -843,7 +957,7 @@
 }
 
 .footerSection {
-    width: 45%;
+    width: 50%;
     background-color: rgba(209, 164, 164, 0);
     border-radius: 150px;
     margin: auto !important;
@@ -860,18 +974,20 @@
 .footerWords {
     float: right;
     height: 50px;
-    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footeritem {
     text-decoration: none;
     list-style: none;
-    padding-top: 13px;
 }
 
 .footeritem a {
-    font-family: Amiri;
-    font-size: 14px;
+    font-family: Noto Naskh Arabic;
+    font-size: 12px;
+    font-weight: 600;
     color: #000000;
     text-align: center;
     border-radius: 5px;
@@ -892,7 +1008,7 @@
 }
 
 .imgfootercontain img {
-    height: 50px;
+    width: 60px;
 }
 
 
@@ -913,8 +1029,14 @@
         height: fit-content;
     }
 
+    .imgfootercontain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .imgfootercontain img {
-        height: 70px;
+        width: 60px;
     }
 }
 
@@ -929,11 +1051,14 @@
         width: 100%;
     }
 
-    .footeritem {
-        padding-top: 15px;
+
+    .imgfootercontain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .imgfootercontain img {
-        height: 50px;
+        width: 60px;
     }
 }
