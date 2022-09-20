@@ -4,12 +4,8 @@
     font-family: Noto Naskh Arabic;
 }
 
-body{
-    background-color: #DEEDF3;
-}
-
 .startContainer {
-    background-color: #DEEDF3;
+    background-color: rgba(220, 241, 255, 0.933);
     height: fit-content;
 }
 
@@ -165,16 +161,17 @@ body{
 /*.................................................. Second */
 
 .secondContainer {
-    background-color: #DEEDF3;
+    background-color: rgba(220, 241, 255, 0.933);
 }
 
 .buildingPartners{
+    color: #1A6F93;
     font-family: Lalezar;
     font-size: 50px;
     padding-top: 20px;
     padding-bottom: 15px;
 }
-#ichk{
+#izxj{
     padding-right: 15px;
 }
 .part1img{
@@ -278,7 +275,7 @@ body{
 
 /*............................................third*/
 .thirdContainer {
-    background-color: #DEEDF3;
+    background-color: rgba(220, 241, 255, 0.933);
     height: 200px;
 }
 .fluid2{
