@@ -10,7 +10,7 @@
 }
 
 .container1 {
-    background: url(sites/default/files/home-ehab//galaxypath.png);
+    background: url(../sites/default/files/home-ehab/galaxypath.png);
     background-position: center;
     /* background-size: 5373px 3574px; original*/
     background-size: 1791px 1191.3333px;
@@ -183,7 +183,7 @@
 
 @media screen and (max-width: 767px) {
     .container1 {
-        background: url(images/Group.png);
+        background: url(../sites/default/files/home-ehab/galaxypath.png);
         background-size: cover;
         background-position: center;
         /* background-size: 5373px 3574px; original*/
@@ -316,7 +316,7 @@
 }
 
 .thirdContainer .fluid1 {
-    background: url(sites/default/files/home-ehab//green-path.svg);
+    background: url(../sites/default/files/home-ehab/green-path.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -574,7 +574,7 @@
 }
 
 .fourthContainer .container-fluid {
-    background: url(sites/default/files/home-ehab//lightbluepath.png);
+    background: url(../sites/default/files/home-ehab/lightbluepath.png);
     /* background-size: 23245.5px 12018px; */
     background-size: 2500px;
     background-repeat: no-repeat;
