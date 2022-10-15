@@ -225,6 +225,8 @@
     align-items: center;
 }
 #Layer_1{
+    padding: 0%;
+    margin: 0%;
     width: 100%;
     position: relative;
     animation: part2img 2s ease-in-out;
